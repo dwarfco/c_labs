@@ -1,0 +1,3 @@
+/home/taras/work/SP/Lab4/c_labs/Lab4/build-ninja/CMakeFiles/Calc.dir
+/home/taras/work/SP/Lab4/c_labs/Lab4/build-ninja/CMakeFiles/edit_cache.dir
+/home/taras/work/SP/Lab4/c_labs/Lab4/build-ninja/CMakeFiles/rebuild_cache.dir

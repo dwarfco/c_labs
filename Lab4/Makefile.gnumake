@@ -1,0 +1,26 @@
+# Makefile
+
+CC := g++
+CFLAGS := -Wall -Werror
+
+SOURCES := calculator.cpp modulus.cpp
+OBJECTS=$(SOURCES:.cpp=.o)
+LIBRARY := libcalc.a
+
+# Target: all (default target)
+all: $(LIBRARY)
+
+# Target: static library
+$(LIBRARY): $(OBJECTS)
+	ar rcs $@ $(OBJECTS)
+
+# Target: clean
+clean:
+	rm -rf *.o *.a
+
+# Rule to build object files
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Phony target to avoid conflicts with file names
+.PHONY: all clean
